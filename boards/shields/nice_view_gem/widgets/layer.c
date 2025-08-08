@@ -13,8 +13,8 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
         // sprintf(text, "Lyr %i", state->layer_index);
         strncpy(text, "NULL", 4);
     } else {
-        // strncpy(text, state->layer_label, 5);
-        strncpy(text, "POTKA", 5);
+        strncpy(text, state->layer_label, 5);
+        // strncpy(text, "POTKA", 5);
         // to_uppercase(text);
     }
 
