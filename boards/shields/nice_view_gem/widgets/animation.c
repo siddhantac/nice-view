@@ -19,6 +19,13 @@ LV_IMG_DECLARE(crystal_14);
 LV_IMG_DECLARE(crystal_15);
 LV_IMG_DECLARE(crystal_16);
 
+
+LV_IMG_DECLARE(arasaka);
+
+const lv_img_dsc_t *arasaka_simple[] = {
+    &arasaka,
+};
+
 const lv_img_dsc_t *anim_imgs[] = {
     &crystal_01, &crystal_02, &crystal_03, &crystal_04, &crystal_05, &crystal_06,
     &crystal_07, &crystal_08, &crystal_09, &crystal_10, &crystal_11, &crystal_12,
@@ -37,11 +44,11 @@ void draw_animation(lv_obj_t *canvas) {
 #else
     lv_obj_t *art = lv_img_create(canvas);
 
-    int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
-    srand(k_uptime_get_32());
-    int random_index = rand() % length;
+    // int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
+    // srand(k_uptime_get_32());
+    // int random_index = rand() % length;
 
-    lv_img_set_src(art, anim_imgs[random_index]);
+    lv_img_set_src(art, arasaka_simple[0]);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
