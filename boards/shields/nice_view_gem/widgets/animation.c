@@ -20,7 +20,7 @@ LV_IMG_DECLARE(crystal_15);
 LV_IMG_DECLARE(crystal_16);
 
 
-// LV_IMG_DECLARE(arasaka);
+LV_IMG_DECLARE(arasaka);
 LV_IMG_DECLARE(balloon);
 
 const lv_img_dsc_t *arasaka_simple[] = {
