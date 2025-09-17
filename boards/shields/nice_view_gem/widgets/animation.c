@@ -22,6 +22,7 @@ LV_IMG_DECLARE(crystal_16);
 
 LV_IMG_DECLARE(arasaka);
 LV_IMG_DECLARE(balloon);
+LV_IMG_DECLARE(Arasaka_Logo);
 
 const lv_img_dsc_t *arasaka_simple[] = {
     &arasaka,
@@ -50,7 +51,8 @@ void draw_animation(lv_obj_t *canvas) {
     // int random_index = rand() % length;
 
     // lv_img_set_src(art, &arasaka);
-    lv_img_set_src(art, &balloon);
+    // lv_img_set_src(art, &balloon);
+    lv_img_set_src(art, &Arasaka_Logo);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
