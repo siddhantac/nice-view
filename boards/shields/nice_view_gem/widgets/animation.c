@@ -23,9 +23,11 @@ LV_IMG_DECLARE(crystal_16);
 LV_IMG_DECLARE(arasaka);
 LV_IMG_DECLARE(balloon);
 LV_IMG_DECLARE(Arasaka_Logo);
+LV_IMG_DECLARE(Arasaka_Logo_glitch_1);
+LV_IMG_DECLARE(Arasaka_Logo_glitch_2);
 
-const lv_img_dsc_t *arasaka_simple[] = {
-    &arasaka,
+const lv_img_dsc_t *arasaka_anim[] = {
+    &Arasaka_Logo, &Arasaka_Logo_glitch_1, &Arasaka_Logo_glitch_2,
 };
 
 const lv_img_dsc_t *anim_imgs[] = {
@@ -52,8 +54,15 @@ void draw_animation(lv_obj_t *canvas) {
 
     // lv_img_set_src(art, &arasaka);
     // lv_img_set_src(art, &balloon);
-    lv_img_set_src(art, &Arasaka_Logo);
+    // lv_img_set_src(art, &Arasaka_Logo);
+
+    lv_obj_center(art);
+
+    lv_animimg_set_src(art, (const void **)arasaka_anim, 3);
+    lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
+    lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
+    lv_animimg_start(art);
 #endif
 
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
+    lv_obj_align(art, LV_ALIGN_BOTTOM_LEFT, 36, 0);
 }
