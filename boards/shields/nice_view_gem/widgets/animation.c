@@ -28,8 +28,8 @@ LV_IMG_DECLARE(Arasaka_Logo_glitch_2);
 
 const lv_img_dsc_t *arasaka_anim[] = {
     &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, 
-    &Arasaka_Logo_glitch_1, &Arasaka_Logo_glitch_1, &Arasaka_Logo_glitch_1, &Arasaka_Logo_glitch_1, 
-    &Arasaka_Logo_glitch_2, &Arasaka_Logo_glitch_2, &Arasaka_Logo_glitch_2, &Arasaka_Logo_glitch_2,
+    &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo_glitch_1, &Arasaka_Logo_glitch_1, 
+    &Arasaka_Logo_glitch_2, &Arasaka_Logo_glitch_2, &Arasaka_Logo, &Arasaka_Logo,
     &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, 
 };
 
