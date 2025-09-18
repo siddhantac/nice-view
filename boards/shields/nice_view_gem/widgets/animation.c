@@ -49,7 +49,7 @@ void draw_animation(lv_obj_t *canvas) {
     lv_animimg_start(art);
 #else
     lv_obj_t *art = lv_img_create(canvas);
-    lv_obj_center(art);
+    // lv_obj_center(art);
 
     // int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
     // srand(k_uptime_get_32());
@@ -58,5 +58,5 @@ void draw_animation(lv_obj_t *canvas) {
     lv_img_set_src(art, &arasaka);
 #endif
 
-    // lv_obj_align(art, LV_ALIGN_TOP_LEFT, -26, 0);
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, -46, 0);
 }
