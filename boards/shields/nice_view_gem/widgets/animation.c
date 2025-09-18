@@ -62,5 +62,5 @@ void draw_animation(lv_obj_t *canvas) {
     lv_img_set_src(art, &Arasaka_Logo);
 #endif
 
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_obj_align(art, LV_ALIGN_BOTTOM_LEFT, 0, 0);
 }
