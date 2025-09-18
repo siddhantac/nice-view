@@ -21,16 +21,14 @@ LV_IMG_DECLARE(crystal_16);
 
 
 LV_IMG_DECLARE(arasaka);
-LV_IMG_DECLARE(balloon);
-LV_IMG_DECLARE(Arasaka_Logo);
-LV_IMG_DECLARE(Arasaka_Logo_glitch_1);
-LV_IMG_DECLARE(Arasaka_Logo_glitch_2);
+LV_IMG_DECLARE(arasaka_glitch_1);
+LV_IMG_DECLARE(arasaka_glitch_2);
 
 const lv_img_dsc_t *arasaka_anim[] = {
-    &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, 
-    &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo_glitch_1, 
-    &Arasaka_Logo_glitch_2, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo,
-    &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, &Arasaka_Logo, 
+    &arasaka, &arasaka, &arasaka, &arasaka, 
+    &arasaka, &arasaka, &arasaka, &arasaka_glitch_1, 
+    &arasaka_glitch_2, &arasaka, &arasaka, &arasaka,
+    &arasaka, &arasaka, &arasaka, &arasaka, 
 };
 
 const lv_img_dsc_t *anim_imgs[] = {
@@ -46,8 +44,7 @@ void draw_animation(lv_obj_t *canvas) {
 
     // lv_animimg_set_src(art, (const void **)anim_imgs, 16);
     lv_animimg_set_src(art, (const void **)arasaka_anim, 16);
-    // lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
-    lv_animimg_set_duration(art, 5000);
+    lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
     lv_animimg_start(art);
 #else
@@ -57,9 +54,7 @@ void draw_animation(lv_obj_t *canvas) {
     // srand(k_uptime_get_32());
     // int random_index = rand() % length;
 
-    // lv_img_set_src(art, &arasaka);
-    // lv_img_set_src(art, &balloon);
-    lv_img_set_src(art, &Arasaka_Logo);
+    lv_img_set_src(art, &arasaka);
 #endif
 
     lv_obj_align(art, LV_ALIGN_BOTTOM_LEFT, 0, 0);

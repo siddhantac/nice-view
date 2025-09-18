@@ -4,12 +4,12 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_ARASAKA_LOGO
-#define LV_ATTRIBUTE_IMG_ARASAKA_LOGO
+#ifndef LV_ATTRIBUTE_IMG_ARASAKA
+#define LV_ATTRIBUTE_IMG_ARASAKA
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA_LOGO uint8_t 
-Arasaka_Logo_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA uint8_t 
+arasaka_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
         0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
@@ -87,22 +87,22 @@ Arasaka_Logo_map[] = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t Arasaka_Logo = {
+const lv_img_dsc_t arasaka = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 121,
   .header.h = 68,
   .data_size = 1088,
-  .data = Arasaka_Logo_map,
+  .data = arasaka_map,
 };
 
-#ifndef LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_1
-#define LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_1
+#ifndef LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_1
+#define LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_1
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_1 uint8_t 
-Arasaka_Logo_glitch_1_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_1 uint8_t 
+arasaka_glitch_1_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
         0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
@@ -180,22 +180,22 @@ Arasaka_Logo_glitch_1_map[] = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t Arasaka_Logo_glitch_1 = {
+const lv_img_dsc_t arasaka_glitch_1 = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 121,
   .header.h = 68,
   .data_size = 1088,
-  .data = Arasaka_Logo_glitch_1_map,
+  .data = arasaka_glitch_1_map,
 };
 
-#ifndef LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_2
-#define LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_2
+#ifndef LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_2
+#define LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_2
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA_LOGO_GLITCH_2 uint8_t 
-Arasaka_Logo_glitch_2_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ARASAKA_GLITCH_2 uint8_t 
+arasaka_glitch_2_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
         0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
@@ -273,12 +273,12 @@ Arasaka_Logo_glitch_2_map[] = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t Arasaka_Logo_glitch_2 = {
+const lv_img_dsc_t arasaka_glitch_2 = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 121,
   .header.h = 68,
   .data_size = 1088,
-  .data = Arasaka_Logo_glitch_2_map,
+  .data = arasaka_glitch_2_map,
 };
