@@ -23,12 +23,20 @@ LV_IMG_DECLARE(crystal_16);
 LV_IMG_DECLARE(arasaka);
 LV_IMG_DECLARE(arasaka_glitch_1);
 LV_IMG_DECLARE(arasaka_glitch_2);
+LV_IMG_DECLARE(arasaka_glitch_3);
+LV_IMG_DECLARE(arasaka_glitch_4);
 
 const lv_img_dsc_t *arasaka_anim[] = {
-    &arasaka, &arasaka, &arasaka, &arasaka, 
-    &arasaka, &arasaka, &arasaka, &arasaka_glitch_1, 
-    &arasaka_glitch_2, &arasaka, &arasaka, &arasaka,
-    &arasaka, &arasaka, &arasaka, &arasaka, 
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka_glitch_1, 
+    &arasaka_glitch_2, 
+    &arasaka_glitch_3, 
+    &arasaka_glitch_4, 
 };
 
 const lv_img_dsc_t *anim_imgs[] = {
