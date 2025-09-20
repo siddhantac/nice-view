@@ -77,7 +77,7 @@ void draw_animation(lv_obj_t *canvas) {
     // srand(k_uptime_get_32());
     // int random_index = rand() % length;
 
-    lv_img_set_src(art, &arasaka);
+    lv_img_set_src(art, &corne);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
