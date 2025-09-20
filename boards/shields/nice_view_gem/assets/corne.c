@@ -40,8 +40,8 @@ const lv_img_dsc_t corne = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
-  .header.w = 121,
-  .header.h = 68,
+  .header.w = 140,
+  .header.h = 24,
   .data_size = 1088,
   .data = corne_map,
 };
