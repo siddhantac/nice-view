@@ -7,6 +7,8 @@ LV_IMG_DECLARE(arasaka_glitch_1);
 LV_IMG_DECLARE(arasaka_glitch_2);
 LV_IMG_DECLARE(arasaka_glitch_3);
 LV_IMG_DECLARE(arasaka_glitch_4);
+LV_IMG_DECLARE(arasaka_glitch_h1);
+LV_IMG_DECLARE(arasaka_glitch_h2);
 
 LV_IMG_DECLARE(corne);
 
@@ -18,13 +20,15 @@ const lv_img_dsc_t *arasaka_anim[] = {
     &arasaka, &arasaka,
     &arasaka, &arasaka,
     &arasaka, &arasaka,
-    &arasaka, &arasaka,
-    &arasaka, &arasaka,
-    &arasaka, &arasaka,
-    &arasaka_glitch_1, 
+    // &arasaka_glitch_1, 
     &arasaka_glitch_2, 
-    &arasaka_glitch_3, 
+    // &arasaka_glitch_3, 
     &arasaka_glitch_4, 
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka, &arasaka,
+    &arasaka_glitch_h1, 
+    &arasaka_glitch_h2, 
     // &corne, &corne,
     // &corne, &corne,
     // &corne, &corne,
@@ -42,7 +46,6 @@ void draw_animation(lv_obj_t *canvas) {
     lv_animimg_set_src(art, (const void **)arasaka_anim, 24);
     lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
-    lv_animimg_set_completed_cb(art, NULL);
     lv_animimg_start(art);
 #else
     lv_obj_t *art = lv_img_create(canvas);
