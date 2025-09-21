@@ -42,7 +42,6 @@ void draw_animation(lv_obj_t *canvas) {
     lv_animimg_set_src(art, (const void **)arasaka_anim, 24);
     lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
-    lv_animimg_set_reverse_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
     lv_animimg_start(art);
 #else
     lv_obj_t *art = lv_img_create(canvas);
