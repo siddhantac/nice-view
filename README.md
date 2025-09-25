@@ -35,15 +35,15 @@ manifest:
     path: config
 ```
 
-Now, simply swap out the default nice_view shield on the board for nice_view_gem in your `build.yaml` file.
+Now, simply swap out the default nice_view shield on the board for nice_view_custom in your `build.yaml` file.
 
 ```yml
 ---
 include:
   - board: nice_nano_v2
-    shield: kyria_left nice_view_adapter nice_view_gem #updated entry
+    shield: kyria_left nice_view_adapter nice_view_custom #updated entry
   - board: nice_nano_v2
-    shield: kyria_right nice_view_adapter nice_view_gem #updated entry
+    shield: kyria_right nice_view_adapter nice_view_custom #updated entry
 ```
 
 Finally, make sure to enable the custom status screen in your ZMK configuration:
