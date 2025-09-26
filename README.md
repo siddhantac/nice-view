@@ -1,4 +1,6 @@
-# nice-view-gem
+# nice-view-custom
+
+The arasaka logo from Cyberpunk 2077 with the glitching effect!
 
 ![Preview](.github/assets/preview.jpg?raw=true)
 
