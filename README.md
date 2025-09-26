@@ -4,6 +4,8 @@ The arasaka logo from Cyberpunk 2077 with the glitching effect!
 
 ![Preview](.github/assets/preview.jpg?raw=true)
 
+![Preview](.github/assets/preview.gif)
+
 ### A sleek customization for the nice!view shield
 
 Add this shield to your keymap repo (see usage below) and run the GitHub action to build your firmware.
