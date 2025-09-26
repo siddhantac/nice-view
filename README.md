@@ -28,7 +28,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nice-view-custom #new entry
+    - name: nice-view #new entry
       remote: siddhantac #new entry
       revision: main #new entry
   self:
