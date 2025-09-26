@@ -1,6 +1,6 @@
 # nice-view-gem
 
-![Preview](https://github.com/m165437/nice-view-gem/blob/main/.github/assets/preview.jpg?raw=true)
+![Preview](.github/assets/preview.jpg?raw=true)
 
 ### A sleek customization for the nice!view shield
 
