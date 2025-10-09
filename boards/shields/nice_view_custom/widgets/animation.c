@@ -3,9 +3,9 @@
 #include "animation.h"
 
 LV_IMG_DECLARE(arasaka);
-// LV_IMG_DECLARE(arasaka_glitch_1);
+LV_IMG_DECLARE(arasaka_glitch_1);
 // LV_IMG_DECLARE(arasaka_glitch_2);
-// LV_IMG_DECLARE(arasaka_glitch_3);
+LV_IMG_DECLARE(arasaka_glitch_3);
 // LV_IMG_DECLARE(arasaka_glitch_4);
 LV_IMG_DECLARE(arasaka_glitch_h1);
 LV_IMG_DECLARE(arasaka_glitch_h2);
@@ -28,12 +28,12 @@ const lv_img_dsc_t *arasaka_anim[] = {
     // &arasaka, &arasaka,
     // &arasaka, &arasaka,
     // &arasaka, &arasaka,
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
-    &arasaka_glitch_h1, &arasaka_glitch_h2, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
+    &arasaka_glitch_1, &arasaka_glitch_3, 
 };
 
 void draw_animation(lv_obj_t *canvas) {
