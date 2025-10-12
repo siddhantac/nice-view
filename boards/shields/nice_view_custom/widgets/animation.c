@@ -33,6 +33,7 @@ const lv_img_dsc_t *arasaka_anim[] = {
 };
 
 void draw_static(lv_obj_t *canvas, bool testo) {
+    fill_background(canvas);
     lv_obj_t *art = lv_img_create(canvas);
     // lv_obj_center(art);
 
