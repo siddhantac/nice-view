@@ -11,6 +11,7 @@ LV_IMG_DECLARE(arasaka_glitch_h1);
 LV_IMG_DECLARE(arasaka_glitch_h2);
 
 LV_IMG_DECLARE(corne);
+LV_IMG_DECLARE(sid);
 
 const lv_img_dsc_t *arasaka_anim[] = {
     &arasaka, &arasaka,
@@ -49,7 +50,7 @@ void draw_animation(lv_obj_t *canvas) {
     // srand(k_uptime_get_32());
     // int random_index = rand() % length;
 
-    lv_img_set_src(art, &corne);
+    lv_img_set_src(art, &sid);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
