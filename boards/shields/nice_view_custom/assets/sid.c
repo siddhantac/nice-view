@@ -83,8 +83,8 @@ const lv_img_dsc_t sid = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
-  .header.w = 168,
-  .header.h = 48,
-  .data_size = 1008,
+  .header.w = 140,
+  .header.h = 68,
+  .data_size = 1224,
   .data = sid_map,
 };
