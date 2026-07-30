@@ -16,12 +16,12 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/keymap.h>
 #include <zmk/usb.h>
 
+#include "about.h"
 #include "battery.h"
 #include "layer.h"
 #include "output.h"
 #include "profile.h"
 #include "screen.h"
-#include "version.h"
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -46,7 +46,7 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[]) {
     fill_background(canvas);
 
     // Draw widgets
-    draw_version_status(canvas);
+    draw_about_status(canvas);
 
     // Rotate for horizontal display
     rotate_canvas(canvas, cbuf);

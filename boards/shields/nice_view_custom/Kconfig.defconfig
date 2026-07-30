@@ -27,6 +27,14 @@ config LV_Z_MEM_POOL_SIZE
 config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     imply NICE_VIEW_WIDGET_STATUS
 
+config NICE_VIEW_OWNER_NAME
+    string "Name shown on the central half"
+    default ""
+    help
+      Optional label drawn above the version string on the central half's
+      display. Leave empty to draw nothing. The font fits 8 characters per
+      line; longer strings wrap.
+
 config NICE_VIEW_FIRMWARE_VERSION
     string "Firmware version shown on the central half"
     default "dev"
