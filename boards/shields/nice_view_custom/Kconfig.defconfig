@@ -27,6 +27,14 @@ config LV_Z_MEM_POOL_SIZE
 config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     imply NICE_VIEW_WIDGET_STATUS
 
+config NICE_VIEW_FIRMWARE_VERSION
+    string "Firmware version shown on the central half"
+    default "dev"
+    help
+      Free-form version string drawn on the central half's display, so a
+      flashed keyboard can be matched back to a point in the config repo.
+      The font fits 8 characters per line; longer strings wrap.
+
 config NICE_VIEW_GEM_ANIMATION
     bool "Enable animation on peripheral"
     default y

@@ -21,6 +21,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include "output.h"
 #include "profile.h"
 #include "screen.h"
+#include "version.h"
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -44,7 +45,8 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[]) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 1);
     fill_background(canvas);
 
-    // No widgets yet, this canvas is intentionally blank
+    // Draw widgets
+    draw_version_status(canvas);
 
     // Rotate for horizontal display
     rotate_canvas(canvas, cbuf);
