@@ -46,10 +46,27 @@ config NICE_VIEW_FIRMWARE_VERSION
 config NICE_VIEW_GEM_ANIMATION
     bool "Enable animation on peripheral"
     default y
+    help
+      Draw the Arasaka logo on the peripheral half, glitching at random
+      intervals. When disabled, the Corne wordmark is drawn instead, static.
 
-config NICE_VIEW_GEM_ANIMATION_MS
-    int "Animation length in milliseconds"
-    default 960
+config NICE_VIEW_GLITCH_IDLE_MIN_MS
+    int "Shortest quiet time between glitch bursts, in milliseconds"
+    default 4000
+
+config NICE_VIEW_GLITCH_IDLE_MAX_MS
+    int "Longest quiet time between glitch bursts, in milliseconds"
+    default 15000
+    help
+      Each burst is followed by a pause drawn uniformly from the min/max
+      range, so the glitch never settles into a visible period.
+
+config NICE_VIEW_GLITCH_FRAME_MS
+    int "Nominal duration of one glitch frame, in milliseconds"
+    default 45
+    help
+      Each frame is jittered to between half and 1.5x this value. Keep it
+      well above CONFIG_ZMK_DISPLAY_TICK_PERIOD_MS or frames will be dropped.
 
 config NICE_VIEW_WIDGET_STATUS
     select LV_USE_LABEL
