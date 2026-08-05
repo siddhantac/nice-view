@@ -27,21 +27,46 @@ config LV_Z_MEM_POOL_SIZE
 config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     imply NICE_VIEW_WIDGET_STATUS
 
-config NICE_VIEW_GEM_WPM_FIXED_RANGE
-    bool "Enable fixed range for WPM gauge/chart"
-    default y
+config NICE_VIEW_OWNER_NAME
+    string "Name shown on the central half"
+    default ""
+    help
+      Optional label drawn above the version string on the central half's
+      display. Leave empty to draw nothing. The font fits 8 characters per
+      line; longer strings wrap.
 
-config NICE_VIEW_GEM_WPM_FIXED_RANGE_MAX
-    int "Fixed range maximum for WPM gauge/chart"
-    default 100
+config NICE_VIEW_FIRMWARE_VERSION
+    string "Firmware version shown on the central half"
+    default "dev"
+    help
+      Free-form version string drawn on the central half's display, so a
+      flashed keyboard can be matched back to a point in the config repo.
+      The font fits 8 characters per line; longer strings wrap.
 
 config NICE_VIEW_GEM_ANIMATION
     bool "Enable animation on peripheral"
     default y
+    help
+      Draw the Arasaka logo on the peripheral half, glitching at random
+      intervals. When disabled, the Corne wordmark is drawn instead, static.
 
-config NICE_VIEW_GEM_ANIMATION_MS
-    int "Animation length in milliseconds"
-    default 960
+config NICE_VIEW_GLITCH_IDLE_MIN_MS
+    int "Shortest quiet time between glitch bursts, in milliseconds"
+    default 4000
+
+config NICE_VIEW_GLITCH_IDLE_MAX_MS
+    int "Longest quiet time between glitch bursts, in milliseconds"
+    default 15000
+    help
+      Each burst is followed by a pause drawn uniformly from the min/max
+      range, so the glitch never settles into a visible period.
+
+config NICE_VIEW_GLITCH_FRAME_MS
+    int "Nominal duration of one glitch frame, in milliseconds"
+    default 45
+    help
+      Each frame is jittered to between half and 1.5x this value. Keep it
+      well above CONFIG_ZMK_DISPLAY_TICK_PERIOD_MS or frames will be dropped.
 
 config NICE_VIEW_WIDGET_STATUS
     select LV_USE_LABEL
@@ -52,12 +77,5 @@ config NICE_VIEW_WIDGET_STATUS
 
 config NICE_VIEW_WIDGET_INVERTED
     bool "Invert display colors"
-
-if !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
-
-config NICE_VIEW_WIDGET_STATUS
-    select ZMK_WPM
-
-endif # !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
 
 endif # SHIELD_NICE_VIEW_GEM

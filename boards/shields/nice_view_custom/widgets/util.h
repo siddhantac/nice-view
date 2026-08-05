@@ -7,7 +7,7 @@
 #define SCREEN_HEIGHT 160
 
 #define BUFFER_SIZE 68
-#define BUFFER_OFFSET_MIDDLE -44
+#define BUFFER_OFFSET_MIDDLE -61
 #define BUFFER_OFFSET_BOTTOM -129
 
 #define LVGL_BACKGROUND                                                                            \
@@ -25,7 +25,6 @@ struct status_state {
     bool active_profile_bonded;
     uint8_t layer_index;
     const char *layer_label;
-    uint8_t wpm[10];
 #else
     bool connected;
 #endif
